@@ -18,12 +18,14 @@
             <a-asset>
                 <a-assets-item id="shooter" src="./models/shooter/gun.gltf"></a-assets-item>
                 <audio id="splash" src="./sounds/splash.mp3"></audio>
-                <audio id="footsteps" src="./sounds/footStep.mp3"></audio>
+                <audio id="footSteps" src="./sounds/footStep.mp3"></audio>
             </a-asset>
 
             <!--Sounds-->
-            <a-entity id="sound1" sound="src: #splash; poolSize: 2; autoplay: false; loop: false; volume: 1"></a-entity>
-            <a-entity id="sound2" sound="src: #footsteps; poolSize: 2; autoplay: false; loop: false; volume: 4"></a-entity>
+            <a-entity id="sound1" 
+            sound="src: #splash; poolSize: 2; autoplay: false; volume: 1; loop: false"></a-entity>
+            <a-entity id="sound2" 
+            sound="src: #footSteps; poolSize: 2; autoplay: false; volume: 4; loop: false"></a-entity>
 
             <!--Environment-->
             <a-entity environment="preset: default; skyType: gradient; lighting: point; skyColor: blue;"></a-entity>
@@ -45,7 +47,7 @@
                 position="0 -4.3 3"
                 rotation="0 180 0"
                 scale="0.35 1 1"
-                PlayerMovement
+                player-movement
                 ></a-entity>
 
                 <a-cursor></a-cursor>
