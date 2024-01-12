@@ -33,6 +33,8 @@ AFRAME.registerComponent("shoot",{
 
                 scene.appendChild(bullet)
 
+                this.shootSound();
+
             }
         })
     },
@@ -69,6 +71,5 @@ AFRAME.registerComponent("shoot",{
     },
     shootSound:function(){
         var entity = document.querySelector("#sound1")
-        entity.components.sound.playSound();
-    }
+        entity.components.sound.playSound()    }
 })
